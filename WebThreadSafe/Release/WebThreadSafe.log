@@ -1,0 +1,18 @@
+﻿  WebThreadSafe.cpp
+z:\c++\threadsafe\webthreadsafe\xLinux.h(47): warning C4146: unary minus operator applied to unsigned type, result still unsigned
+z:\c++\threadsafe\webthreadsafe\xLinux.h(86): warning C4244: '=': conversion from 'unsigned __int64' to 'char', possible loss of data
+z:\c++\threadsafe\webthreadsafe\xLinux.h(199): warning C4018: '<': signed/unsigned mismatch
+z:\c++\threadsafe\webthreadsafe\Processor.h(158): warning C4018: '<': signed/unsigned mismatch
+z:\c++\threadsafe\webthreadsafe\Processor.h(280): warning C4018: '>=': signed/unsigned mismatch
+z:\c++\threadsafe\webthreadsafe\Processor.h(297): warning C4018: '>=': signed/unsigned mismatch
+z:\c++\threadsafe\webthreadsafe\Accepter.h(27): warning C4474: 'printf' : too many arguments passed for format string
+  z:\c++\threadsafe\webthreadsafe\Accepter.h(27): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+z:\c++\threadsafe\webthreadsafe\ThreadSafeStore.h(71): warning C4018: '<': signed/unsigned mismatch
+z:\c++\threadsafe\webthreadsafe\ThreadSafeQueue.h(58): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  0 of 901 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  WebThreadSafe.vcxproj -> Z:\c++\ThreadSafe\Release\WebThreadSafe.exe
+  WebThreadSafe.vcxproj -> Z:\c++\ThreadSafe\Release\WebThreadSafe.pdb (Full PDB)
