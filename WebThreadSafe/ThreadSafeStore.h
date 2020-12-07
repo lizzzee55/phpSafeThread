@@ -13,8 +13,9 @@ public:
 	store_data(const char *key)
 	{
 		size_t len = strlen(key);
-		this->key = (char*)malloc(len);
+		this->key = (char*)malloc(sizeof(char) * (len + 1));
 		memcpy(this->key, key, len);
+		this->key[len] = 0;
 
 		this->len = 0;
 	}
@@ -24,7 +25,7 @@ public:
 		if (this->len > 0)
 			free(this->value);
 
-		this->value = (char*)malloc(len);
+		this->value = (char*)malloc(sizeof(char) * (len + 1));
 		this->len = len;
 		memcpy(this->value, val, len);
 		this->value[len] = 0;
