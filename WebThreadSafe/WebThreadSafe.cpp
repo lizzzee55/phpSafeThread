@@ -44,7 +44,7 @@ static int actionQueue(connection *con)
 		printf("get queue %s size %d\r\n", key.c_str(), count);
 		if (count == 0)
 		{
-			std::string body = "empty";
+			std::string body = "[]";
 			std::string responce = "HTTP/1.1 200 OK\r\nContent-length: " + utils::xitoa(body.length(), 10) + "\r\nConnection: Close\r\nContent-Type: text/html\r\n\r\n" + body;
 			send(con->socket, responce.data(), responce.length(), MSG_NOSIGNAL);
 			return 1;
