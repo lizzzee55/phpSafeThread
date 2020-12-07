@@ -27,6 +27,7 @@ public:
 		this->value = (char*)malloc(len);
 		this->len = len;
 		memcpy(this->value, val, len);
+		this->value[len] = 0;
 	}
 
 	void flush()
