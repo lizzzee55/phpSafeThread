@@ -50,17 +50,18 @@ static int actionQueue(connection *con)
 			return 1;
 		}
 
-		std::string body = "[";
+		std::vector< std::string > json_items;
+		
 		for (int i = 0; i < count; i++)
 		{
 			store_data *data = q->list[i];
-			std::string row = "{ id: " + _itoa(i) + ", value: \"" + data->value + "\"}";
+			json_items.push_back("{ id: " + _itoa(i) + ", value: \"" + data->value + "\"}");
 			//printf("row: %s\r\n", row.c_str());
 			data->flush();
 			free(data);
-			body += row;
 		}
-		body += "]";
+		
+		std::string body = "[" + utils::implode(json_items, ",") + "]";
 
 		q->list.clear();
 
