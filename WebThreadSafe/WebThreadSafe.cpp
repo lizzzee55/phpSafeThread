@@ -55,7 +55,7 @@ static int actionQueue(connection *con)
 		for (int i = 0; i < count; i++)
 		{
 			store_data *data = q->list[i];
-			json_items.push_back("{ id: " + _itoa(i) + ", value: \"" + data->value + "\"}");
+			json_items.push_back("{ \"id\": " + _itoa(i) + ", \"value\": \"" + data->value + "\"}");
 			//printf("row: %s\r\n", row.c_str());
 			data->flush();
 			free(data);
